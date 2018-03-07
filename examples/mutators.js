@@ -21,7 +21,6 @@ const pagesMutator = {
     [actions.changePage](state, action) {
         Object.assign(state, {
             subPageUri: null,
-            altoPage: MODE_TYPES.TERMS_CONDITIONS,
             errorNotification: false,
             inputDocumentItem: null,
         })
@@ -29,9 +28,8 @@ const pagesMutator = {
 
     ["OLD_REDUX_ACTION"](state, action) {
         Object.assign(state, {
-            subPageUri: null,
-            altoPage: MODE_TYPES.PRIVACY_POLICY,
-            errorNotification: false,
+            subPageUri: action.url,
+            errorNotification: true,
             inputDocumentItem: null,
         })
     }
