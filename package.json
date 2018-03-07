@@ -1,0 +1,10 @@
+{
+  "name": "redux-utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "main": "./src/index.js"
+  "dependencies": {
+    "immer": "^1.1.3"
+  }
+}
